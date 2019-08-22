@@ -150,7 +150,7 @@ module LinkedIn
     end
 
     def email_address_path()
-      path = "/emailAddress"
+      path = "/emailAddress?q=members&projection=(elements*(handle~))"
     end
 
     def single_person_path(id=nil, url=nil)
