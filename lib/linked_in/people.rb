@@ -39,6 +39,11 @@ module LinkedIn
       get(path, options)
     end
 
+    def email_address
+      path = email_address_path()
+      get(path, {})
+    end
+
     # Retrieve a list of 1st degree connections for a user who has
     # granted access to his/her account
     #

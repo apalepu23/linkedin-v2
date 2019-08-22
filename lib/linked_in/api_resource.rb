@@ -149,6 +149,10 @@ module LinkedIn
       end
     end
 
+    def email_address_path()
+      path = "/emailAddress"
+    end
+
     def single_person_path(id=nil, url=nil)
       if id
         return "/id=#{id}"
